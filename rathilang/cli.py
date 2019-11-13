@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""pikalang.cli module.
+"""rahilang.cli module.
 
-Command Line Interface to pikalang.
+Command Line Interface to rathilang.
 
-Copyright (c) 2019 Blake Grotewold
+Copyright (c) 2019 Pushkar Patel
 """
 
 from __future__ import print_function
@@ -12,14 +12,14 @@ from __future__ import print_function
 import argparse
 import setup
 
-import pikalang
+import rathilang
 
 
 def main():
     """Run application as a CLI executable"""
     arg_parser = argparse.ArgumentParser(
-        prog="pikalang",
-        description="a Pikalang interpreter written in Python",
+        prog="rathilang",
+        description="a Rathilang interpreter written in Python",
         argument_default=argparse.SUPPRESS,
     )
 
@@ -29,14 +29,14 @@ def main():
         action="version",
         version="%(prog)s {0}".format(setup.__VERSION__),
     )
-    arg_parser.add_argument("file", help="the path to the pokeball file")
+    arg_parser.add_argument("file", help="the path to the allstack developer's file")
 
     args = arg_parser.parse_args()
 
-    sourcecode = pikalang.load_source(args.file)
+    sourcecode = rathilang.load_source(args.file)
 
     if sourcecode:
-        pikalang.evaluate(sourcecode)
+        rathilang.evaluate(sourcecode)
     else:
         arg_parser.print_usage()
 

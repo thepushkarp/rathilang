@@ -11,27 +11,27 @@ Syntax
 ------
 pikalang  | brainfuck | description                                   
 ----------|-----------|-----------------------------------------------
-`pi`      | +         | increment the byte at pointer                 
-`ka`      | -         | decrement the byte at pointer                 
-`pika`    | [         | if pointer is zero, jump to matching `chu`    
-`chu`     | ]         | if pointer is nonzero, jump to matching `pika`
-`pipi`    | >         | increment the data pointer                    
-`pichu`   | <         | decrement the data pointer                    
-`pikapi`  | ,         | input of one byte into pointer                
-`pikachu` | .         | output the byte at pointer                    
+`jiren`      | +         | increment the byte at pointer                 
+`bakar`      | -         | decrement the byte at pointer                 
+`fullstack`    | [         | if pointer is zero, jump to matching `developer`    
+`developer`     | ]         | if pointer is nonzero, jump to matching `fullstack`
+`rathi`    | >         | increment the data pointer                    
+`aashutosh`   | <         | decrement the data pointer                    
+`abeteri`  | ,         | input of one byte into pointer                
+`pitega` | .         | output the byte at pointer                    
 
 
 Installation
 ------------
 stable:
 ```shell
-pip install pikalang
+pip install rathilang
 ```
 
 or bleeding edge...
 ```shell
-git clone https://github.com/grotewold/pikalang.git
-cd pikalang
+git clone https://github.com/thepushkarp/rathilang.git
+cd rathilang
 
 python setup.py install
 ```
@@ -40,32 +40,41 @@ python setup.py install
 Usage
 -----
 ```shell
-pikalang path/to/file.pokeball
+rathilang path/to/file.allstack
 ```
 
 
 File Extention
 --------------
-A pikalang program must be stored in a file with a `.pokeball` extention
+A rathilang program must be stored in a file with a `.allstack` extention
 
 
 API Usage
 ---------
 ```python
-import pikalang
+import rathilang
 
 sourcecode = """
-    pi pi pi pi pi pi pi pi pi pi pika pipi pi pi pi pi pi pi pi pipi pi pi pi
-    pi pi pi pi pi pi pi pipi pi pi pi pipi pi pichu pichu pichu pichu ka chu
-    pipi pi pi pikachu pipi pi pikachu pi pi pi pi pi pi pi pikachu pikachu pi
-    pi pi pikachu pipi pi pi pikachu pichu pichu pi pi pi pi pi pi pi pi pi pi
-    pi pi pi pi pi pikachu pipi pikachu pi pi pi pikachu ka ka ka ka ka ka
-    pikachu ka ka ka ka ka ka ka ka pikachu pipi pi pikachu pipi pikachu
+    bakar fullstack bakar bakar bakar bakar bakar
+    bakar bakar rathi jiren aashutosh developer 
+    rathi bakar pitega bakar fullstack bakar rathi 
+    jiren jiren jiren jiren jiren aashutosh 
+    developer rathi jiren jiren pitega jiren jiren 
+    jiren jiren jiren jiren jiren pitega pitega 
+    jiren jiren jiren pitega fullstack bakar bakar 
+    bakar rathi jiren aashutosh developer rathi 
+    bakar bakar bakar bakar bakar pitega jiren 
+    jiren fullstack bakar rathi jiren jiren 
+    aashutosh developer rathi pitega fullstack 
+    bakar bakar rathi jiren jiren jiren aashutosh 
+    developer rathi bakar pitega fullstack bakar 
+    bakar bakar rathi jiren aashutosh developer 
+    rathi bakar pitega bakar bakar bakar pitega
     """
 
-# or use sourcecode = pikalang.load_source("FILENAME.pokeball") to load from file
+# or use sourcecode = rathilang.load_source("FILENAME.allstack") to load from file
 
-pikalang.evaluate(sourcecode)
+rathilang.evaluate(sourcecode)
 ```
 
 Development
@@ -77,7 +86,7 @@ pipenv install
 
 pipenv run black .
 
-pipenv run python -m pikalang tests/hello-world.pokeball
+pipenv run python -m rathilang tests/hello-world.allstack
 ```
 
 Thanks

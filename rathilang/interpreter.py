@@ -15,14 +15,14 @@ tokens = (
     "CLOSE_LOOP",
 )
 
-t_INCREMENT = r"pi"
-t_DECREMENT = r"ka"
-t_SHIFT_LEFT = r"pipi"
-t_SHIFT_RIGHT = r"pichu"
-t_OUTPUT = r"pikachu"
-t_INPUT = r"pikapi"
-t_OPEN_LOOP = r"pika"
-t_CLOSE_LOOP = r"chu"
+t_INCREMENT = r"jiren"
+t_DECREMENT = r"bakar"
+t_SHIFT_LEFT = r"aashutosh"
+t_SHIFT_RIGHT = r"rathi"
+t_OUTPUT = r"pitega"
+t_INPUT = r"abeteri"
+t_OPEN_LOOP = r"fullstack"
+t_CLOSE_LOOP = r"developer"
 
 
 def t_newline(t):
@@ -81,7 +81,7 @@ def p_error(p):
     print("Syntax error in input!")
 
 
-class PikalangProgram:
+class RathilangProgram:
     def __init__(self, source):
         self.source = source
 
