@@ -1,24 +1,24 @@
 <h1 align="center">
-<p>PIKALANG - The Pikachu Programming Language</p>
+<p>RATHILANG - The Allstack Programming Language</p>
 <br>
-<img style="margin-bottom:-14px" src="images/shock.gif" />
+<img style="margin-bottom:-14px" src="images/allstack.png" />
 <br>
 </h1>
 
-A [brainfuck][2] derivative based off the vocabulary of [Pikachu][3] from [Pokémon][4].
+A [brainfuck][2] derivative based on the the characteristics of [Aashutosh Rathi][3].
 
 Syntax
 ------
-pikalang  | brainfuck | description                                   
-----------|-----------|-----------------------------------------------
+pikalang     | brainfuck | description                                   
+-------------|-----------|-----------------------------------------------
 `jiren`      | +         | increment the byte at pointer                 
 `bakar`      | -         | decrement the byte at pointer                 
-`fullstack`    | [         | if pointer is zero, jump to matching `developer`    
-`developer`     | ]         | if pointer is nonzero, jump to matching `fullstack`
-`rathi`    | >         | increment the data pointer                    
-`aashutosh`   | <         | decrement the data pointer                    
-`abeteri`  | ,         | input of one byte into pointer                
-`pitega` | .         | output the byte at pointer                    
+`fullstack`  | [         | if pointer is zero, jump to matching `developer`    
+`developer`  | ]         | if pointer is nonzero, jump to matching `fullstack`
+`rathi`      | >         | increment the data pointer                    
+`aashutosh`  | <         | decrement the data pointer                    
+`abeteri`    | ,         | input of one byte into pointer                
+`pitega`     | .         | output the byte at pointer                    
 
 
 Installation
@@ -86,23 +86,19 @@ pipenv install
 
 pipenv run black .
 
-pipenv run python -m rathilang tests/hello-world.allstack
+pipenv run python -m rathilang tests/factorial.allstack
 ```
 
 Thanks
 ------
-Special thanks to [Elliot Chance][5] for providing the base implementation of this.
+Special thanks to [Elliot Chance][5] for providing the base implementation of this and [Pikalang][1] for providing the implementation.
 
 Disclaimer
 ----------
-This is a fan-based parody of themes from [Pokémon][3]. The language,
-as well as its author, is in no way associated with the Pokémon francise
-and its creators, nor is this project, in any way, for-profit. This is a
-project to teach myself `ply`, which is protected under fair use.
+This is a repo created to acknowledge everything [Aashutosh Rathi][3] has done for the institute and me. The [pikalang][1] repository served as an inspiration for me. This repository is protected under fair use.
 
-
-[1]: http://esolangs.org/wiki/Pikalang
+[1]: https://github.com/groteworld/pikalang "Pikalang"
 [2]: http://en.wikipedia.org/wiki/Brainfuck "Brainfuck"
-[3]: https://www.google.com/search?q=pikachu&tbm=isch "Pikachu"
+[3]: https://aashutosh.dev/ "Aashutosh Rathi"
 [4]: http://www.pokemon.com/ "Pokémon"
 [5]: http://elliot.land/post/write-your-own-brainfuck-interpreter "Elliot Chance"
