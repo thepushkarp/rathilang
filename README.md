@@ -9,7 +9,7 @@ A [brainfuck][2] derivative based on the the characteristics of [Aashutosh Rathi
 
 Syntax
 ------
-pikalang     | brainfuck | description                                   
+rathilang    | brainfuck | description                                   
 -------------|-----------|-----------------------------------------------
 `jiren`      | +         | increment the byte at pointer                 
 `bakar`      | -         | decrement the byte at pointer                 
@@ -78,7 +78,7 @@ pipenv install
 
 pipenv run black .
 
-pipenv run python -m rathilang tests/factorial.allstack
+pipenv run python -m rathilang tests/hello-devs.allstack
 ```
 
 Thanks
