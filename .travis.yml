@@ -19,4 +19,4 @@ install:
 
 script:
    - rathilang --version
-   - rathilang tests/hello-world.allstack
+   - rathilang tests/hello-devs.allstack

@@ -55,22 +55,14 @@ API Usage
 import rathilang
 
 sourcecode = """
-    bakar fullstack bakar bakar bakar bakar bakar
-    bakar bakar rathi jiren aashutosh developer 
-    rathi bakar pitega bakar fullstack bakar rathi 
-    jiren jiren jiren jiren jiren aashutosh 
-    developer rathi jiren jiren pitega jiren jiren 
-    jiren jiren jiren jiren jiren pitega pitega 
-    jiren jiren jiren pitega fullstack bakar bakar 
-    bakar rathi jiren aashutosh developer rathi 
-    bakar bakar bakar bakar bakar pitega jiren 
-    jiren fullstack bakar rathi jiren jiren 
-    aashutosh developer rathi pitega fullstack 
-    bakar bakar rathi jiren jiren jiren aashutosh 
-    developer rathi bakar pitega fullstack bakar 
-    bakar bakar rathi jiren aashutosh developer 
-    rathi bakar pitega bakar bakar bakar pitega
-    """
+    jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren fullstack rathi jiren rathi jiren jiren jiren 
+    rathi jiren jiren jiren jiren jiren jiren jiren rathi jiren jiren jiren jiren jiren jiren jiren jiren jiren 
+    jiren aashutosh aashutosh aashutosh aashutosh bakar developer rathi rathi rathi jiren jiren pitega rathi 
+    jiren pitega jiren jiren jiren jiren jiren jiren jiren pitega pitega jiren jiren jiren pitega aashutosh 
+    aashutosh jiren jiren pitega rathi bakar bakar bakar bakar pitega rathi bakar bakar bakar bakar bakar bakar 
+    bakar bakar bakar bakar pitega jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren 
+    jiren jiren jiren jiren pitega bakar bakar bakar pitega aashutosh aashutosh jiren pitega aashutosh jiren 
+    jiren jiren jiren jiren jiren jiren jiren jiren jiren pitega"""
 
 # or use sourcecode = rathilang.load_source("FILENAME.allstack") to load from file
 
@@ -91,7 +83,7 @@ pipenv run python -m rathilang tests/factorial.allstack
 
 Thanks
 ------
-Special thanks to [Elliot Chance][5] for providing the base implementation of this and [Pikalang][1] for providing the implementation.
+Special thanks to [Elliot Chance][4] for providing the base implementation of this and [Pikalang][1] for providing the implementation.
 
 Disclaimer
 ----------
@@ -100,5 +92,4 @@ This is a repo created to acknowledge everything [Aashutosh Rathi][3] has done f
 [1]: https://github.com/groteworld/pikalang "Pikalang"
 [2]: http://en.wikipedia.org/wiki/Brainfuck "Brainfuck"
 [3]: https://aashutosh.dev/ "Aashutosh Rathi"
-[4]: http://www.pokemon.com/ "Pokémon"
-[5]: http://elliot.land/post/write-your-own-brainfuck-interpreter "Elliot Chance"
+[4]: http://elliot.land/post/write-your-own-brainfuck-interpreter "Elliot Chance"

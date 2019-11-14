@@ -4,7 +4,7 @@
 
 from setuptools import setup
 
-__VERSION__ = "0.1.0"
+__VERSION__ = "0.1.1"
 
 if __name__ == "__main__":
     setup(
