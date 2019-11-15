@@ -4,7 +4,10 @@
 
 from setuptools import setup
 
-__VERSION__ = "1.1.0"
+__VERSION__ = "1.1.1"
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 if __name__ == "__main__":
     setup(
@@ -16,7 +19,7 @@ if __name__ == "__main__":
         author="Pushkar Patel",
         author_email="thepushkarp@gmail.com",
         url="https://github.com/thepushkarp/rathilang",
-        long_description='README.md',
+        long_description=long_description,
         long_description_content_type='text/markdown',
         py_modules=["rathilang", "rathilang.cli", "rathilang.interpreter", "setup"],
         install_requires=["ply"],
