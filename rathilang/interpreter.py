@@ -21,7 +21,7 @@ t_SHIFT_LEFT = r"aashutosh"
 t_SHIFT_RIGHT = r"rathi"
 t_OUTPUT = r"pitega"
 t_INPUT = r"abeteri"
-t_OPEN_LOOP = r"fullstack"
+t_OPEN_LOOP = r"allstack"
 t_CLOSE_LOOP = r"developer"
 
 

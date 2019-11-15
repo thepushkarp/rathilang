@@ -9,7 +9,7 @@ class RathilangTranslator():
         self.bf_2_rathi_dictionary = {
             '+': 'jiren',
             '-': 'bakar',
-            '[': 'fullstack',
+            '[': 'allstack',
             ']': 'developer',
             '>': 'rathi',
             '<': 'aashutosh',

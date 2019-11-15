@@ -13,8 +13,8 @@ rathilang    | brainfuck | description
 -------------|-----------|-----------------------------------------------
 `jiren`      | +         | increment the byte at pointer                 
 `bakar`      | -         | decrement the byte at pointer                 
-`fullstack`  | [         | if pointer is zero, jump to matching `developer`    
-`developer`  | ]         | if pointer is nonzero, jump to matching `fullstack`
+`allstack`   | [         | if pointer is zero, jump to matching `developer`    
+`developer`  | ]         | if pointer is nonzero, jump to matching `allstack`
 `rathi`      | >         | increment the data pointer                    
 `aashutosh`  | <         | decrement the data pointer                    
 `abeteri`    | ,         | input of one byte into pointer                
@@ -55,7 +55,7 @@ API Usage
 import rathilang
 
 sourcecode = """
-    jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren fullstack rathi jiren rathi jiren jiren jiren 
+    jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren allstack rathi jiren rathi jiren jiren jiren 
     rathi jiren jiren jiren jiren jiren jiren jiren rathi jiren jiren jiren jiren jiren jiren jiren jiren jiren 
     jiren aashutosh aashutosh aashutosh aashutosh bakar developer rathi rathi rathi jiren jiren pitega rathi 
     jiren pitega jiren jiren jiren jiren jiren jiren jiren pitega pitega jiren jiren jiren pitega aashutosh 
