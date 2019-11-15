@@ -24,11 +24,11 @@ def load_source(file):
             return rathilang_data
 
         else:
-            print("rathilang: either the file or you are not baka enough.", file=sys.stderr)
+            print("rathilang: either the file or you are not a baka.", file=sys.stderr)
             return False
 
     else:
-        print("rathilang: file nahi mila. dhoondh warna pitega.", file=sys.stderr)
+        print("rathilang: file nahi mila. bana jaldi warna pitega.", file=sys.stderr)
         return False
 
 
