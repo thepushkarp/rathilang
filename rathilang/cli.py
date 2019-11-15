@@ -29,7 +29,7 @@ def main():
         action="version",
         version="%(prog)s {0}".format(setup.__VERSION__),
     )
-    arg_parser.add_argument("file", help="the path to the allstack developer's file")
+    arg_parser.add_argument("file", help="the path to the baka's file")
 
     args = arg_parser.parse_args()
 

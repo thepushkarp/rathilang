@@ -17,14 +17,14 @@ from rathilang.interpreter import RathilangProgram
 
 def load_source(file):
     if os.path.isfile(file):
-        if os.path.splitext(file)[1] == ".allstack":
+        if os.path.splitext(file)[1] == ".baka":
             with open(file, "r") as rathilang_file:
                 rathilang_data = rathilang_file.read()
 
             return rathilang_data
 
         else:
-            print("rathilang: either the file or you are not allstack.", file=sys.stderr)
+            print("rathilang: either the file or you are not baka enough.", file=sys.stderr)
             return False
 
     else:

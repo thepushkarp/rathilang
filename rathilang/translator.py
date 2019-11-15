@@ -24,7 +24,7 @@ class RathilangTranslator():
             for c in rathi_code:
                 out += self.rathi_2_bf_dictionary[c]
         except KeyError as e:
-            raise Exception('Not an allstack!') from e
+            raise Exception('No baka no!') from e
         return out
 
     def bf_2_rathi(self, bf_code):

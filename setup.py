@@ -4,7 +4,7 @@
 
 from setuptools import setup
 
-__VERSION__ = "0.1.1"
+__VERSION__ = "1.1.0"
 
 if __name__ == "__main__":
     setup(
@@ -12,10 +12,12 @@ if __name__ == "__main__":
         version=__VERSION__,
         description="A brainfuck derivative based on the the characteristics of Aashutosh Rathi",
         license="MIT",
-        keywords="esoteric programming language brainfuck",
+        keywords="esoteric programming language brainfuck aashutoshrathi",
         author="Pushkar Patel",
         author_email="thepushkarp@gmail.com",
         url="https://github.com/thepushkarp/rathilang",
+        long_description='README.md',
+        long_description_content_type='text/markdown',
         py_modules=["rathilang", "rathilang.cli", "rathilang.interpreter", "setup"],
         install_requires=["ply"],
         entry_points={"console_scripts": ["rathilang = rathilang.cli:main"]},

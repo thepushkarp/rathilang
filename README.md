@@ -18,7 +18,7 @@ rathilang    | brainfuck | description
 `rathi`      | >         | increment the data pointer                    
 `aashutosh`  | <         | decrement the data pointer                    
 `abeteri`    | ,         | input of one byte into pointer                
-`pitega`     | .         | output the byte at pointer                    
+`pitega`     | .         | output the byte at pointer
 
 
 Installation
@@ -40,13 +40,13 @@ python setup.py install
 Usage
 -----
 ```shell
-rathilang path/to/file.allstack
+rathilang path/to/file.baka
 ```
 
 
 File Extention
 --------------
-A rathilang program must be stored in a file with a `.allstack` extention
+A rathilang program must be stored in a file with a `.baka` extention
 
 
 API Usage
@@ -78,7 +78,7 @@ pipenv install
 
 pipenv run black .
 
-pipenv run python -m rathilang tests/hello-devs.allstack
+pipenv run python -m rathilang tests/hello-devs.baka
 ```
 
 Thanks
