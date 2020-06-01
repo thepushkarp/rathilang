@@ -20,7 +20,7 @@ if __name__ == "__main__":
         author_email="thepushkarp@gmail.com",
         url="https://github.com/thepushkarp/rathilang",
         long_description=long_description,
-        long_description_content_type='text/markdown',
+        long_description_content_type="text/markdown",
         py_modules=["rathilang", "rathilang.cli", "rathilang.interpreter", "setup"],
         install_requires=["ply"],
         entry_points={"console_scripts": ["rathilang = rathilang.cli:main"]},

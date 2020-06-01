@@ -86,7 +86,7 @@ class RathilangProgram:
         self.source = source
 
     def run(self):
-        self.data = [0] * 225 # Because 15^2
+        self.data = [0] * 225  # Because 15^2
         self.location = 0
         commands = self.parse(self.source)
         commands.run(self)
