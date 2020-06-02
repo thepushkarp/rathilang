@@ -9,29 +9,29 @@
 <hr>
 <p align="center"><a href="http://en.wikipedia.org/wiki/Brainfuck">A brainfuck</a> derivative based on the the characteristics of <a href="https://aashutosh.dev/">Aashutosh Rathi</a></p>
 
+## Syntax
 
-Syntax
-------
-rathilang    | brainfuck | description                                   
--------------|-----------|-----------------------------------------------
-`jiren`      | +         | increment the byte at pointer                 
-`bakar`      | -         | decrement the byte at pointer                 
-`allstack`   | [         | if pointer is zero, jump to matching `developer`    
-`developer`  | ]         | if pointer is nonzero, jump to matching `allstack`
-`rathi`      | >         | increment the data pointer                    
-`aashutosh`  | <         | decrement the data pointer                    
-`abeteri`    | ,         | input of one byte into pointer                
-`pitega`     | .         | output the byte at pointer
+| rathilang   | brainfuck | description                                        |
+| ----------- | --------- | -------------------------------------------------- |
+| `jiren`     | +         | increment the byte at pointer                      |
+| `bakar`     | -         | decrement the byte at pointer                      |
+| `allstack`  | [         | if pointer is zero, jump to matching `developer`   |
+| `developer` | ]         | if pointer is nonzero, jump to matching `allstack` |
+| `rathi`     | >         | increment the data pointer                         |
+| `aashutosh` | <         | decrement the data pointer                         |
+| `abeteri`   | ,         | input of one byte into pointer                     |
+| `pitega`    | .         | output the byte at pointer                         |
 
+## Installation
 
-Installation
-------------
 stable:
+
 ```shell
 pip install rathilang
 ```
 
 or bleeding edge...
+
 ```shell
 git clone https://github.com/thepushkarp/rathilang.git
 cd rathilang
@@ -39,32 +39,29 @@ cd rathilang
 python setup.py install
 ```
 
+## Usage
 
-Usage
------
 ```shell
 rathilang path/to/file.baka
 ```
 
+## File Extention
 
-File Extention
---------------
 A rathilang program must be stored in a file with a `.baka` extention because `rathilang` doesn't considers any other file worthy enough.
 
+## API Usage
 
-API Usage
----------
 ```python
 import rathilang
 
 sourcecode = """
-    jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren allstack rathi jiren rathi jiren jiren jiren 
-    rathi jiren jiren jiren jiren jiren jiren jiren rathi jiren jiren jiren jiren jiren jiren jiren jiren jiren 
-    jiren aashutosh aashutosh aashutosh aashutosh bakar developer rathi rathi rathi jiren jiren pitega rathi 
-    jiren pitega jiren jiren jiren jiren jiren jiren jiren pitega pitega jiren jiren jiren pitega aashutosh 
-    aashutosh jiren jiren pitega rathi bakar bakar bakar bakar pitega rathi bakar bakar bakar bakar bakar bakar 
-    bakar bakar bakar bakar pitega jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren 
-    jiren jiren jiren jiren pitega bakar bakar bakar pitega aashutosh aashutosh jiren pitega aashutosh jiren 
+    jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren allstack rathi jiren rathi jiren jiren jiren
+    rathi jiren jiren jiren jiren jiren jiren jiren rathi jiren jiren jiren jiren jiren jiren jiren jiren jiren
+    jiren aashutosh aashutosh aashutosh aashutosh bakar developer rathi rathi rathi jiren jiren pitega rathi
+    jiren pitega jiren jiren jiren jiren jiren jiren jiren pitega pitega jiren jiren jiren pitega aashutosh
+    aashutosh jiren jiren pitega rathi bakar bakar bakar bakar pitega rathi bakar bakar bakar bakar bakar bakar
+    bakar bakar bakar bakar pitega jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren jiren
+    jiren jiren jiren jiren pitega bakar bakar bakar pitega aashutosh aashutosh jiren pitega aashutosh jiren
     jiren jiren jiren jiren jiren jiren jiren jiren jiren pitega"""
 
 # or use sourcecode = rathilang.load_source("FILENAME.allstack") to load from file
@@ -72,8 +69,8 @@ sourcecode = """
 rathilang.evaluate(sourcecode)
 ```
 
-Development
------------
+## Development
+
 When developing, use `pipenv` to install needed tools.
 
 ```sh
@@ -84,12 +81,12 @@ pipenv run black .
 pipenv run python -m rathilang tests/hello-devs.baka
 ```
 
-Thanks
-------
+## Thanks
+
 Special thanks to [Elliot Chance][4] for providing the base implementation of this and [Pikalang][1] for providing the implementation on top of which this repo is made.
 
-Disclaimer
-----------
+## Disclaimer
+
 This is a small gift for [Aashutosh Rathi][3] who did big things for the institute and me. The [pikalang][1] repository served as an inspiration for me. This repository is protected under fair use.
 
 [1]: https://github.com/groteworld/pikalang "Pikalang"
